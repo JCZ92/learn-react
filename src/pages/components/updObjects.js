@@ -11,7 +11,7 @@ export default function Form() {
   });
 
   function handleCityChange(e) {
-    const nextArtwork = { ...person.artwork, city: e.target.value };
+    const nextArtwork = { ...person.artwork, city: e.target.value };// this is requried for shallow copy
     const nextPerson = { ...person, artwork: nextArtwork };
     setPerson(nextPerson);
   }
