@@ -3,7 +3,8 @@
 // import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Profile from './components/profile'
-import Gallery from "./qcomps/state"
+// import Gallery from "./qcomps/state"
+import Gallery from './components/whyState'
 import PersonData from './components/stateObj'
 // import Form from './components/snapshot2'
 import Form from './components/updObjects'
@@ -18,6 +19,7 @@ import BucketList from './qcomps/arrObj'
 export default function Home() {
   return (
     <div className={styles.main}>
+        
         <BucketList />
         <List />
         <Scoreboard />
